@@ -280,6 +280,21 @@ footer a{text-decoration:none;color:var(--muted)}
 
         <article class="case">
           <div>
+            <span class="status wip">In development · isolated testing</span>
+            <h3>AI Lead Response Automation</h3>
+            <div class="chain"><span class="t">Lead intake</span><em>→</em><span>Validation &amp; dedup</span><em>→</em><span>AI qualification</span><em>→</em><span>Human approval</span><em>→</em><span>Outreach workflow</span></div>
+            <div class="tags"><span>n8n</span><span>PostgreSQL</span><span>Gemini</span><span>Google Sheets</span><span>Gmail</span><span>Docker</span></div>
+          </div>
+          <dl>
+            <div><dt>Problem</dt><dd>Business enquiries can be scattered across channels, difficult to prioritize and easy to lose track of when follow-up is manual.</dd></div>
+            <div><dt>Designed solution</dt><dd>A lead-response workflow for intake validation, duplicate prevention, AI-assisted qualification, secure human approval, outreach preparation, delivery-state tracking and retryable synchronization.</dd></div>
+            <div><dt>Engineering evidence</dt><dd>Isolated PostgreSQL synthetic suite: 30/30 checks passed. A separate 37-node n8n synthetic harness was tested. The 173-node workflow passed import and structural checks.</dd></div>
+            <div><dt>Current limitations</dt><dd>The complete 173-node workflow has not been executed end-to-end. Live Gemini, Google Sheets and Gmail integrations have not been verified. This is an in-development engineering project, not a deployed production service.</dd></div>
+          </dl>
+        </article>
+
+        <article class="case">
+          <div>
             <span class="status wip">In progress · infrastructure stage</span>
             <h3>Anivonix Discord AI Support Bot</h3>
             <div class="chain"><span class="t">Discord event</span><em>→</em><span>Signed webhook</span><em>→</em><span>n8n</span><em>→</em><span>PostgreSQL</span></div>
